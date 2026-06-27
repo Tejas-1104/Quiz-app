@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Ambient background decorative spheres -->
+    <div class="ambient-glow sphere-1"></div>
+    <div class="ambient-glow sphere-2"></div>
+
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>Ultimate Quiz</h1>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="quiz-meta">
+                <span id="questionNumber">Question 1 of 3</span>
+            </div>
+        </div>
+
+        <div id="quiz" class="quiz-content">
+            <h2 id="question">Question Text</h2>
+
+            <div class="options-container">
+                <label class="option-card">
+                    <input type="radio" name="answer" value="a" class="option-radio">
+                    <span class="option-indicator">A</span>
+                    <span id="optionA" class="option-text"></span>
+                </label>
+
+                <label class="option-card">
+                    <input type="radio" name="answer" value="b" class="option-radio">
+                    <span class="option-indicator">B</span>
+                    <span id="optionB" class="option-text"></span>
+                </label>
+
+                <label class="option-card">
+                    <input type="radio" name="answer" value="c" class="option-radio">
+                    <span class="option-indicator">C</span>
+                    <span id="optionC" class="option-text"></span>
+                </label>
+
+                <label class="option-card">
+                    <input type="radio" name="answer" value="d" class="option-radio">
+                    <span class="option-indicator">D</span>
+                    <span id="optionD" class="option-text"></span>
+                </label>
+            </div>
+
+            <button id="nextBtn">Submit & Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
